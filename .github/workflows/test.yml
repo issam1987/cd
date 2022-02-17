@@ -18,7 +18,12 @@ jobs:
             php-version: '7.4'
             tools: phpstan, composer
       - name: Report PHP version
-        run: php -v      
+        run: php -v    
+      - name: PHP Code Style (phpcs)
+        uses: chindit/actions-phpcs@master
+        with:
+          # Folder to check code style
+          dir: src/    
       - name: Get composer cache directory
         id: composercache
         run: echo "set-output"

@@ -1,11 +1,11 @@
 <?php
 /**
- * @param int $a
- * @param int $b
- * @return int An array of menu items
+ * Define template file.
+ * 
+ * @param int $a Describe what this parameter is
  */
-function hookMenu($a, $b){
-    return $a+$b;
+function hookMenu($a){
+    return $a+3;
 }
-echo hookMenu(5,6);
+echo hookMenu(5);
 ?>

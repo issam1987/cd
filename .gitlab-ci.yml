@@ -11,12 +11,3 @@ docker:test:
     - echo "Before Script"
   script:
     - echo "Script"
-
-ssh:deploy:
-  stage: deploy
-  needs:
-    - docker:test
-  tags:
-    - ssh
-  script:
-    - echo "Script"

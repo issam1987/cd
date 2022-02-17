@@ -11,5 +11,5 @@ function afg(){
     $b=6;
     return $a+$b;
 }
-echo  afg();
+echo afg();
 ?>

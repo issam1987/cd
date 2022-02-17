@@ -1,7 +1,11 @@
 <?php
+/**
+ * afg retourne date
+ */
 function afg(){
-    $a=5;$b=6;
-    echo 'kkk';
+    $a=5
+    $b=6;
+    return $a+$b
 }
-echo 'test ';
+echo  afg();
 ?>

@@ -1,11 +1,7 @@
 <?php
 /**
- * $a : nb products
- * $b : nb products
- * Implements hookMenu($a, $b).
- *
- * Description
- *
+ * @param int $a
+ * @param int $b
  * @return int An array of menu items
  */
 function hookMenu($a, $b){

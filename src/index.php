@@ -6,10 +6,8 @@
  *
  * @return int An array of menu items
  */
-function afg(){
-    $a=5;
-    $b=6;
+function hook_menu($a, $b){
     return $a+$b;
 }
-echo afg();
+echo hook_menu(5,6);
 ?>

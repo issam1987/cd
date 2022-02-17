@@ -23,6 +23,3 @@ jobs:
 
       - name: Install dependencies
         run: composer install --prefer-dist
- 
-      - name: Setup problem matchers for PHPUnit
-        run: echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"=

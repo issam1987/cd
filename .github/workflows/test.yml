@@ -17,6 +17,8 @@ jobs:
         with:
             php-version: '7.4'
             tools: phpstan, composer
+      - name: Report PHP version
+        run: php -v      
       - name: Get composer cache directory
         id: composercache
         run: echo "::set-output name=dir::$(composer config cache-files-dir)"

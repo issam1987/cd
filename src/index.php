@@ -1,14 +1,13 @@
 <?php
-/**
- * Define template file.
- * 
- * This function calls a static fetching method against the Ingredient class
- * 
- * @param int $a Describe what this parameter is
- * @return int
- */
-function hookMenu($a){
-    return $a+3;
-}
-echo hookMenu(5);
+   /**
+    * Appends a cookie to "Cookie:" header
+    *
+    * @param    string  cookie name
+    * @param    string  cookie value
+    * @return   HTTP_Request2
+    * @throws   HTTP_Request2_Exception
+    */
+    public function addCookie($name, $value)
+    {
+    }
 ?>

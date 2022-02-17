@@ -1,0 +1,20 @@
+image: bogkonstantin/php-7.4-node-12-debug:latest
+
+stages:
+    - build
+    - deploy
+
+build:
+    stage: build
+    only:
+        - master
+    artifacts:
+        paths:
+            - ./
+    script:
+        - export APP_ENV=prod
+        - composer install --no-dev --optimize-autoloader
+        - yarn install
+        - yarn encore production
+        - rm -r node_modules
+        - mkdir -p var && chmod -R 777 var

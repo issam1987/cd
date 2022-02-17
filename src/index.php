@@ -1,13 +1,15 @@
 <?php
 /**
- * Implements hook_menu().
+ * $a : nb products
+ * $b : nb products
+ * Implements hookMenu($a, $b).
  *
  * Description
  *
  * @return int An array of menu items
  */
-function hook_menu($a, $b){
+function hookMenu($a, $b){
     return $a+$b;
 }
-echo hook_menu(5,6);
+echo hookMenu(5,6);
 ?>
